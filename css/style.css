@@ -1,16 +1,21 @@
+:root{
+    --color-text: #2f8324;
+}
+
 body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: "Montserrat", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: weight;
-    font-style: normal;
 }
 
 .logo{
-    width: 5rem;
+    width: 3rem;
     margin-right: 0.625rem;
+}
+
+span{
+    color: var(--color-text);
 }
 
 .navbar .nav-link {
@@ -29,12 +34,12 @@ body {
     bottom: 0;
     width: 0%;
     height: 2px;
-    background: #43c931;
+    background: var(--color-text);
     transition: width 0.3s ease;
 }
 
 .navbar .nav-link:hover {
-    color: #43c931 !important;
+    color: var(--color-text) !important;
 }
 
 .navbar .nav-link:hover::after {
@@ -44,12 +49,26 @@ body {
 .nav-color{
     background-color: #ffffff;
     padding: 6px 0;
-    background: rgba(255, 255, 255, 0.3) !important;
-    backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px);
 }
 
 
 
 .section-container{
     border-bottom: 1px solid #0000003d;
+}
+
+
+.container-header{
+    background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(/img/herbalife-fondo.jpeg);
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.presentacion{
+    color: #f5f5f5;
 }
