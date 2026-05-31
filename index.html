@@ -11,7 +11,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header class="container-header">
+    <header class="container-header" id="inicio">
         <section class="section-container">
             <nav class="navbar navbar-expand-lg nav-color fixed-top">
                 <div class="container-fluid">
@@ -22,7 +22,7 @@
                     <div class="collapse navbar-collapse" id="navbarNavDropdown">
                         <ul class="navbar-nav ms-auto">
                             <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                                <a class="nav-link active" aria-current="page" href="#inicio">Inicio</a>
                             </li>
                             <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -47,16 +47,26 @@
         </section>
         <section class="presentacion">
             <h1>
-                Transformá tu bienestar con nutrición inteligente
+                Transformá tu bienestar con <span class="fondo-span">nutrición inteligente</span>
             </h1>
             <h2>Planes personalizados con productos Herbalife y seguimiento constante</h2>
-            <p>Te acompaño en cada paso para que alcances tus objetivos, ya sea bajar de peso, ganar masa muscular o simplemente sentirte mejor. No se trata solo de productos, sino de un cambio de hábitos sostenible.</p>
+            <p>Te acompaño en cada paso para que alcances tus objetivos, ya sea bajar de peso, ganar masa muscular o simplemente sentirte mejor. <br> No se trata solo de productos, sino de un cambio de hábitos sostenible.</p>
+            <a href="#ver-mas" class="btn-scroll">Ver más ↓</a>
         </section>
     </header>
-        <main>
-
+    <section>
+        <a href="https://www.whatsapp.com/?lang=es" target="_blank">
+            <div class="position-fixed z-1 end-0 mx-3 bottom-0 mb-4">
+                <img class="wsp-logo" src="./img/wsp.png" alt="whatsapp">
+            </div>
+        </a>
+    </section>
+        <main id="ver-mas">
+            <section></section>
         </main>
     
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 </body>
 </html>
+
+
