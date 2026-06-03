@@ -13,6 +13,8 @@ body {
 
 /*HEADER*/
 
+/* NAVBAR*/
+
 .hr-index{
     margin-bottom: 3rem;
 }
@@ -60,6 +62,7 @@ span{
 }
 
 
+/* HEADER */
 
 .section-container{
     border-bottom: 1px solid #0000003d;
