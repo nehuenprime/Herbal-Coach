@@ -197,11 +197,9 @@ span{
 
 
 .info-compra{
-    /*background-color: #d4d4d4;*/
     background-color: var(--color-text);
     color: var(--color-blanco);
     padding: 1rem;
-    
 }
 
 
