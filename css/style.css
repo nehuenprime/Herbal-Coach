@@ -67,7 +67,7 @@ span{
 
 
 .container-header{
-    background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(/img/herbalife-fondo.jpeg);
+    background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(../img/herbalife-fondo.jpeg);
     background-size: cover;
     background-position: center;
     min-height: 100vh;
@@ -106,7 +106,7 @@ span{
 }
 
 .wsp-logo{
-    width: 5rem;
+    width: 3.8rem;
 }
 
 .wsp-logo:hover{
@@ -200,6 +200,67 @@ span{
     background-color: var(--color-text);
     color: var(--color-blanco);
     padding: 1rem;
+    padding: 0.625rem 0;
+}
+
+.beneficio{
+    padding: 0 10px;
+}
+
+.icono{
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+.beneficio h2{
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+.beneficio p{
+    max-width: 350px;
+    margin: 0 auto;
+}
+
+.iconos{
+    width: 1.5rem;
+    padding-bottom: 0.625rem;
+}
+
+.first{
+    border-right: 1px solid var(--color-blanco);
 }
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 768px){
+    .first{
+        border: none;
+        border-bottom: 1px solid var(--color-blanco);
+    }
+}
