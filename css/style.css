@@ -289,9 +289,12 @@ span{
 /* seccion de productos*/
 
 .btn-consultar{
-    display: inline-block;
-    margin-top: 10px;
+    /*display: inline-block;
+    margin-top: 10px;*/
     padding: 10px 20px;
+    display: block;
+    width: fit-content;
+    margin: 0 auto;
 
     background-color: #43c931;
     color: white;
@@ -315,9 +318,14 @@ span{
 
 .nombre-producto{
     min-height: 90px;
+    margin-bottom: 8px;
+    text-align: center;
 }
 
-
+.descripcion-producto{
+    margin-bottom: 15px;
+    text-align: center;
+}
 
 
 
@@ -332,4 +340,27 @@ span{
         border: none;
         border-bottom: 1px solid var(--color-blanco);
     }
+
+    .img-producto{
+        height: 180px;
+    }
+
+    .nombre-producto{
+        min-height: auto;
+        font-size: 1.8rem;
+    }
+
+    .card-producto{
+        text-align: center;
+        margin-bottom: 40px;
+    }
+
+    .btn-consultar{
+        width: 100%;
+        max-width: 200px;
+        margin: 15px auto 0 auto;
+    }
+
 }
+
+
