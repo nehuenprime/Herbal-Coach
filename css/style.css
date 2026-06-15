@@ -38,24 +38,13 @@ span{
     color: #000000 !important;
 }
 
-.navbar .nav-link::after {
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    width: 0%;
-    height: 2px;
-    background: var(--color-text);
-    transition: width 0.3s ease;
-}
+
 
 .navbar .nav-link:hover {
     color: var(--color-text) !important;
+    background-color: var(--fondo-claro) !important;
 }
 
-.navbar .nav-link:hover::after {
-    width: 100%;
-}
 
 .nav-color{
     background-color: #fff;
@@ -244,6 +233,7 @@ span{
     background: var(--fondo-claro);
     padding: 60px 0 20px;
     margin-top: 80px;
+    border-top: 0.5px solid #d1cbcb;
 }
 
 .footer-herb h4, h5{
@@ -272,11 +262,10 @@ span{
 }
 
 .footer-links a:hover {
-    color: var(--color-background-header);
+    font-weight: bolder;
 }
 
 .footer-herb hr {
-    border-color: var(--color-hr);
     margin: 30px 0 20px;
 }
 
