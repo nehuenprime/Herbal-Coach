@@ -1,6 +1,7 @@
 :root{
     --color-text: #2f8324;
     --color-blanco: #f5f5f5;
+    --fondo-claro: #ececec;
 }
 
 body {
@@ -236,13 +237,64 @@ span{
 
 
 
+/* footer */
 
 
+.footer-herb {
+    background: var(--fondo-claro);
+    padding: 60px 0 20px;
+    margin-top: 80px;
+}
 
+.footer-herb h4, h5{
+    font-weight: 700;
+    margin-bottom: 15px;
+}
 
+.footer-herb p {
+    color: var(--color-text);
+    line-height: 1.7;
+}
 
+.footer-links {
+    list-style: none;
+    padding: 0;
+}
 
+.footer-links li {
+    margin-bottom: 10px;
+}
 
+.footer-links a {
+    color: var(--color-text);
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.footer-links a:hover {
+    color: var(--color-background-header);
+}
+
+.footer-herb hr {
+    border-color: var(--color-hr);
+    margin: 30px 0 20px;
+}
+
+.p-emprein{
+    padding-left: 3rem;
+    margin: 0;
+}
+
+.link-emprein{
+    text-decoration: none;
+    color: var(--color-text);
+    font-weight: bold;
+}
+
+.logo-emprein{
+    width: 1.7rem;
+    border-radius: 100%
+}
 
 
 
