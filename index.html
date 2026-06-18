@@ -7,8 +7,8 @@
     <link rel="stylesheet" href="css/style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
     <header class="container-header" id="inicio">
@@ -166,7 +166,7 @@
                 <div class="col-12 col-sm-6 col-lg-3">
                     <div class="producto">
                         <img src="img-products/batidoproteherb.png" alt="batido proteico" class="img-producto">
-                        <h3 class="nombre-producto">Batido Nutricional Proteico</h3>
+                        <h3 class="nombre-producto">Batido Nutricional</h3>
                         <p class="descripcion-producto">Consulta por cuotas sin interés</p>
                         <a href="#" class="btn-consultar" data-producto="Batido Nutricional Proteico">Consultar</a>
                     </div>
@@ -230,7 +230,8 @@
                 <div class="col-md-4">
                     <h4>HerbalCoach</h4>
                     <p>
-                        Distribuidor Independiente
+                        Distribuidor Independiente <br>
+                        📧 quiquehbl@gmail.com
                     </p>
                 </div>
                 <div class="col-md-4">
@@ -242,11 +243,20 @@
                         <li><a href="pages/salud.html">Salud</a></li>
                     </ul>
                 </div>
-                <div class="col-md-4">
-                    <h5>Contacto</h5>
-                    <p>📧 quiquehbl@gmail.com</p>
-                    <p>📍 Buenos Aires, Argentina</p>
-                    <p>📞 +54 11 1234-5678</p>
+                <div class="col-md-4" id="contacto">
+                    <h4 class="mb-3">¿Necesitás asesoramiento?</h4>
+                    <input type="text" id="nombre" class="form-control mb-2" placeholder="Tu nombre">
+                    <select id="objetivo" class="form-select mb-3">
+                        <option selected disabled>¿Cuál es tu objetivo?</option>
+                        <option>Bajar de peso</option>
+                        <option>Ganar masa muscular</option>
+                        <option>Mejorar mi alimentación</option>
+                        <option>Más energía</option>
+                        <option>Otro</option>
+                    </select>
+                    <button class="btn btn-success w-100 btn-contacto" onclick="consultarWhatsapp()">
+                        Consultar
+                    </button>
                 </div>
             </div>
         </div>

@@ -15,3 +15,36 @@ document.querySelectorAll(".btn-consultar").forEach(btn => {
     });
 
 });
+
+
+function consultarWhatsapp(){
+
+    const nombre = document.getElementById("nombre").value.trim();
+    const objetivo = document.getElementById("objetivo").value;
+
+    if(nombre === ""){
+        alert("Ingresá tu nombre.");
+        return;
+    }
+
+    if(objetivo === "¿Cuál es tu objetivo?"){
+        alert("Seleccioná un objetivo.");
+        return;
+    }
+
+    const mensaje = 
+`Hola, soy ${nombre}.
+Me gustaría recibir asesoramiento.
+
+Mi objetivo es:
+${objetivo}`;
+
+    const telefono = "5491159372833";
+
+    window.open(
+        `https://wa.me/${telefono}?text=${encodeURIComponent(mensaje)}`,
+        "_blank"
+    );
+
+}
+
