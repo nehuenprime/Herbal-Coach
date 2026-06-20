@@ -3,22 +3,27 @@
     --color-blanco: #f5f5f5;
     --fondo-claro: #ececec;
     --color-btn: #43c931;
+    --color-btn-hover: #369f28;
 }
 
 body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Inter", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: weight;
-    font-style: normal;
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 
 /*HEADER*/
 
 /* NAVBAR*/
+
+.inter{
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+}
 
 .hr-index{
     margin-bottom: 3rem;
@@ -42,7 +47,10 @@ span{
     color: #000000 !important;
 }
 
-
+.navbar-toggler {
+    border: none !important;
+    box-shadow: none !important;
+}
 
 .navbar .nav-link:hover {
     color: var(--color-text) !important;
@@ -130,7 +138,7 @@ span{
 
 .btn-scroll:hover {
     background: var(--color-text);
-    border-color: #43c931;
+    border-color: var(--color-btn);
     color: var(--color-blanco);
 }
 
@@ -243,7 +251,7 @@ span{
     width: fit-content;
     margin: 0 auto;
     
-    background-color: #43c931;
+    background-color: var(--color-btn);
     color: white;
     
     text-decoration: none;
@@ -253,7 +261,7 @@ span{
 }
 
 .btn-consultar:hover{
-    background-color: #369f28;
+    background-color: var(--color-btn-hover);
     transform: translateY(-2px);
 }
 
@@ -347,11 +355,11 @@ span{
 
 
 .btn-contacto{
-    background-color: #43c931 !important;
+    background-color: var(--color-btn) !important;
     border: none !important;
 }
 .btn-contacto:hover{
-    background-color: #369f28 !important;
+    background-color: var(--color-btn-hover) !important;
     transform: translateY(-2px);
 }
 

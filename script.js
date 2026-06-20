@@ -48,3 +48,27 @@ ${objetivo}`;
 
 }
 
+const navbar = document.querySelector(".navbar-collapse");
+const icono = document.querySelector(".icono-menu");
+
+// cuando abre
+navbar.addEventListener("show.bs.collapse", () => {
+    icono.innerHTML = "✕";
+});
+
+// cuando cierra
+navbar.addEventListener("hide.bs.collapse", () => {
+    icono.innerHTML = "☰";
+});
+
+// cerrar al hacer click en links
+const navLinks = document.querySelectorAll(".nav-link");
+
+navLinks.forEach(link => {
+    link.addEventListener("click", () => {
+        const bsCollapse = new bootstrap.Collapse(navbar, {
+            toggle: false
+        });
+        bsCollapse.hide();
+    });
+});
