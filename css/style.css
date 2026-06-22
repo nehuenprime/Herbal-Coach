@@ -372,6 +372,8 @@ span{
 }
 
 
+/* VENTANA MODAL */
+
 .modal-producto{
     position: fixed;
     inset: 0;
