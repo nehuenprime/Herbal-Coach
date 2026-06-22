@@ -1,3 +1,5 @@
+/*BTN DE CONSULTAR PRODUCTO*/
+
 document.querySelectorAll(".btn-consultar").forEach(btn => {
 
     btn.addEventListener("click", () => {
@@ -16,6 +18,8 @@ document.querySelectorAll(".btn-consultar").forEach(btn => {
 
 });
 
+
+/* FORMULARIO DE CONSULTA POR WSP */
 
 function consultarWhatsapp(){
 
@@ -48,6 +52,9 @@ ${objetivo}`;
 
 }
 
+/* NAVBAR */
+
+
 const navbar = document.querySelector(".navbar-collapse");
 const navLinks = document.querySelectorAll(".nav-link");
 
@@ -60,3 +67,36 @@ navLinks.forEach(link => {
         bootstrap.Collapse.getOrCreateInstance(navbar).hide();
     });
 });
+
+
+/*MODAL DE PRODUCTOS*/
+
+
+const modal = document.getElementById("modalProducto");
+const modalImg = document.getElementById("modalImg");
+const modalTitulo = document.getElementById("modalTitulo");
+const modalDescripcion = document.getElementById("modalDescripcion");
+const cerrar = document.querySelector(".cerrar");
+
+document.querySelectorAll(".abrir-modal").forEach(img=>{
+
+    img.addEventListener("click",()=>{
+        modal.style.display="flex";
+        modalImg.src=img.dataset.img;
+        modalTitulo.textContent=img.dataset.nombre;
+        modalDescripcion.textContent=img.dataset.descripcion;
+    });
+
+});
+
+cerrar.onclick=()=>{
+    modal.style.display="none";
+}
+
+modal.onclick=(e)=>{
+
+    if(e.target===modal){
+        modal.style.display="none";
+    }
+
+}

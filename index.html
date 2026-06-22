@@ -158,7 +158,7 @@
             <div class="row g-4">
                 <div class="col-12 col-sm-6 col-lg-3">
                     <div class="producto">
-                        <img src="img-products/creatinaherb.png" alt="Creatina H24" class="img-producto">
+                        <img src="img-products/creatinaherb.png" alt="Creatina H24" class="img-producto abrir-modal" data-img="img-products/creatinaherb.png" data-nombre="Creatina H24" data-descripcion="Suplemento de creatina premium para mejorar fuerza, potencia y recuperación.">
                         <h3 class="nombre-producto">Creatina H24</h3>
                         <p class="descripcion-producto">Consulta por cuotas sin interés</p>
                         <a href="#" class="btn-consultar" data-producto="Creatina H24">Consultar</a>
@@ -221,6 +221,17 @@
                     </div>
                 </div>
             </div>
+            </div>
+            <div id="modalProducto" class="modal-producto">
+                <div class="contenido-modal">
+                    <span class="cerrar">&times;</span>
+                    <img id="modalImg">
+                    <h2 id="modalTitulo"></h2>
+                    <p id="modalDescripcion"></p>
+                    <a id="modalBoton" class="btn-consultar">
+                        Consultar
+                    </a>
+                </div>
             </div>
         </section>
     </main>
