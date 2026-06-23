@@ -85,6 +85,7 @@ document.querySelectorAll(".abrir-modal").forEach(img=>{
         modalImg.src=img.dataset.img;
         modalTitulo.textContent=img.dataset.nombre;
         modalDescripcion.textContent=img.dataset.descripcion;
+        modalBoton.dataset.producto = img.dataset.nombre;
     });
 
 });
