@@ -300,6 +300,13 @@ span{
     padding: 10px;
 }
 
+.texto-oculto-mobile{
+    display: block;
+}
+
+.texto-mobile{
+    display: none;
+}
 
 
 /* footer */
@@ -454,6 +461,21 @@ span{
         width: 100%;
         max-width: 200px;
         margin: 15px auto 0 auto;
+        text-align: center;
+    }
+
+    .producto{
+        border: 1px solid #3333333d;
+        border-radius: 15px;
+        padding: 10px;
+    }
+
+    .texto-oculto-mobile{
+        display: none;
+    }
+
+    .texto-mobile{
+        display: block;
     }
 
 }
