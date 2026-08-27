@@ -36,6 +36,7 @@ body {
 }
 
 span{
+    /*color: var(--color-text);*/
     color: var(--color-text);
 }
 
@@ -54,8 +55,7 @@ span{
 }
 
 .navbar .nav-link:hover {
-    color: var(--color-text) !important;
-    background-color: var(--fondo-claro) !important;
+    color: var(--color-btn) !important;
 }
 
 
@@ -66,6 +66,12 @@ span{
 
 
 /* HEADER */
+
+h1{
+    opacity: 0;
+    transform: translateY(30px);
+    animation: aparecerTitulo 0.8s ease-out forwards;
+}
 
 .section-container{
     border-bottom: 1px solid #0000003d;
@@ -108,7 +114,12 @@ span{
 }
 
 .fondo-span{
-    background-color: #202020;
+    /*background-color: #202020;*/
+    /*background: #2f832466;
+    backdrop-filter: blur(1px);
+    padding: 5px;
+    border-radius: 6px;*/
+    color: var(--color-btn);
 }
 
 .wsp-logo{
@@ -122,7 +133,7 @@ span{
 
 .btn-scroll {
     position: absolute;
-    bottom: 30px;
+    bottom: 4.6875rem;
     left: 0;
     right: 0;
     margin: auto;
@@ -308,6 +319,17 @@ span{
     display: none;
 }
 
+.producto {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: opacity 0.7s ease, transform 0.7s ease;
+}
+
+.producto.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
 
 /* footer */
 
@@ -432,7 +454,19 @@ span{
 
 
 
+/* ANINAMACIONES */
 
+@keyframes aparecerTitulo {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
 
 
 
