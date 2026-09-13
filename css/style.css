@@ -6,6 +6,10 @@
     --color-btn-hover: #369f28;
 }
 
+/* *{
+    scrollbar-color: var(--color-btn) #e0e0e0;
+} */
+
 body {
     margin: 0;
     padding: 0;
@@ -122,13 +126,6 @@ h1{
     color: var(--color-btn);
 }
 
-.wsp-logo{
-    width: 3.8rem;
-}
-
-.wsp-logo:hover{
-    scale: calc(1.1);
-}
 
 
 .btn-scroll {
@@ -398,6 +395,26 @@ h1{
 .btn-contacto:hover{
     background-color: var(--color-btn-hover) !important;
     transform: translateY(-2px);
+}
+
+
+.ig-style{
+    position: fixed;
+    z-index: 1;
+    right: 0;
+    margin-left: 1rem;  
+    margin-right: 1rem;  
+    bottom: 0;
+    margin-bottom: 5.5rem; 
+}
+
+.link-logo{
+    width: 3.5rem;
+}
+
+.link-logo:hover{
+    filter: brightness(150%);
+    scale: calc(1.1);
 }
 
 

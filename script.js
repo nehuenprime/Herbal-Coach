@@ -1,3 +1,13 @@
+const whatsappPrincipal = document.getElementById("whatsapp-principal");
+
+if (whatsappPrincipal) {
+    const numero = "5491159372833";
+    const mensaje = "Hola, vengo de la página web y quería hacer una consulta.";
+
+    whatsappPrincipal.href =
+        `https://wa.me/${numero}?text=${encodeURIComponent(mensaje)}`;
+}
+
 /*BTN DE CONSULTAR PRODUCTO*/
 
 document.querySelectorAll(".btn-consultar").forEach(btn => {
