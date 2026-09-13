@@ -1,3 +1,5 @@
+/* BTN PRINCIPAL DE WSP */
+
 const whatsappPrincipal = document.getElementById("whatsapp-principal");
 
 if (whatsappPrincipal) {
